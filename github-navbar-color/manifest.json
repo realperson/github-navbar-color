@@ -1,0 +1,28 @@
+{
+  "manifest_version": 2,
+
+  "name": "github navbar color",
+  "description": "您可以使用这个chrome插件去掉github顶部栏的黑色背景(You can use this chrome plugin to remove the color of top navigation bar at github.com, Develop by realperson.QQ:1750698766)",
+  "version": "1.0",
+  "homepage_url":"https://github.com/realperson/github-navbar-color",
+
+  "icons": {
+    "48": "images/icon48.png"
+  },
+  "browser_action": {
+    "default_icon": "images/icon.png",
+    "default_popup": "index.html",
+    "default_title": "用于修改github顶部栏颜色"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://github.com/*"],
+      "css": ["css/index.css"],
+      "js": ["js/jquery-3.1.0.min.js","js/index.js"]
+    }
+  ],
+  "permissions": [
+    "activeTab",
+    "https://github.com/*"
+  ]
+}
