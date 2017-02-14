@@ -1,0 +1,252 @@
+body .header {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    background-color: #f5f5f5;
+    border-bottom: 1px solid #e5e5e5
+}
+
+body .header-logged-out {
+    padding-top: 15px;
+    padding-bottom: 15px
+}
+
+body .read-only-mode-banner {
+    text-align: center;
+    background-color: #f8e45f;
+    border-bottom-color: #f6dc2e
+}
+
+body .header-logo-invertocat {
+    float: left;
+    margin-right: 10px;
+    margin-left: -2px;
+    color: #555;
+    white-space: nowrap
+}
+
+body .header-logo-invertocat .octicon-mark-github {
+    float: left
+}
+
+body .header-logo-invertocat:hover {
+    color: #4078c0;
+    text-decoration: none
+}
+
+body .header-logo-subbrand {
+    float: left;
+    margin-right: 5px;
+    margin-left: 6px;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 30px
+}
+
+body .header-logo-wordmark {
+    position: relative;
+    float: left;
+    height: 26px;
+    margin-right: 15px;
+    color: #555
+}
+
+body .header-logo-wordmark .octicon {
+    float: left
+}
+
+body .header-logo-wordmark:hover {
+    color: #4078c0
+}
+
+body .notification-indicator .mail-status {
+    position: absolute;
+    top: -2px;
+    right: 3px;
+    z-index: 2;
+    display: none;
+    width: 14px;
+    height: 14px;
+    color: #fff;
+    text-align: center;
+    background-image: -webkit-linear-gradient(#1cafff, #0086ce);
+    background-image: linear-gradient(#1cafff, #0086ce);
+    background-clip: padding-box;
+    border: 2px solid #f3f3f3;
+    border-radius: 50%
+}
+
+body .notification-indicator .mail-status.unread {
+    display: inline-block
+}
+
+body .notification-indicator:hover .mail-status {
+    background-color: #4078c0
+}
+
+body .header-search {
+    float: left;
+    width: 300px;
+    margin-right: 10px
+}
+
+body .header .header-search-wrapper {
+    min-height: 34px;
+    padding: 0;
+    font-size: 14px;
+    line-height: 20px;
+    color: #333;
+    vertical-align: middle;
+    background-color: #fff;
+    background-repeat: no-repeat;
+    background-position: right 8px center;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    outline: none;
+    box-shadow: inset 0 1px 2px rgba(0,0,0,0.075);
+}
+
+body .header .header-search-wrapper.focus, body .header .header-search-wrapper:focus{
+    border-color: #51a7e8;
+    outline: none;
+    box-shadow: inset 0 1px 2px rgba(0,0,0,0.075),0 0 5px rgba(81,167,232,0.5);
+}
+
+
+body .header-search-input {
+    display: table-cell;
+    width: 99.999%;
+    min-height: 26px;
+    padding-top: 0;
+    padding-bottom: 0;
+    background: none;
+    border: 0;
+    box-shadow: none
+}
+
+body .header-search-input:focus {
+    border: 0;
+    box-shadow: none
+}
+
+body .header-search-input::-ms-clear {
+    display: none
+}
+
+body .header .header-search-scope {
+    display: none;
+    width: 1%;
+    padding-right: 8px;
+    padding-left: 8px;
+    font-size: 12px;
+    color: #767676;
+    white-space: nowrap;
+    vertical-align: middle;
+    border-right: 1px solid #eee;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px
+}
+
+body .scoped-search .header-search-scope {
+    display: table-cell
+}
+
+body .scoped-search .form-control.focus .header-search-scope {
+    color: #4078c0;
+    background-color: #edf2f9;
+    border-color: #c6d7ec
+}
+
+body .header-nav {
+    list-style: none
+}
+
+body .header-nav-item {
+    float: left
+}
+
+body .header-nav-item.active .dropdown-menu-content {
+    display: block
+}
+
+body .header-nav-item.active .tooltipped::before,
+body .header-nav-item.active .tooltipped::after {
+    display: none
+}
+
+body .header-nav-item .dropdown-menu {
+    width: 180px;
+    margin-top: 15px
+}
+
+body .header .dropdown-menu-sw::after {
+    top: -13px !important;
+}
+
+/*body .header .dropdown-menu-sw::before {
+    right: 8px !important;
+}*/
+
+body .header-nav-link {
+    display: block;
+    padding: 5px 8px;
+    font-weight: 600;
+    line-height: 20px;
+    color: #555
+}
+
+body .header-nav-link:hover,
+body .header-nav-link:focus {
+    color: #4078c0;
+    text-decoration: none
+}
+
+body .header-nav-link:hover .dropdown-caret,
+body .header-nav-link:focus .dropdown-caret {
+    border-top-color: #4078c0
+}
+
+body .user-nav {
+    margin-right: -8px
+}
+
+body .user-nav .header-nav-link {
+    height: 30px
+}
+
+body .user-nav .octicon {
+    width: 16px;
+    text-align: center
+}
+
+body .user-nav .octicon-plus {
+    margin-top: 1px;
+    margin-right: 1px
+}
+
+body .user-nav .octicon-bell {
+    vertical-align: text-bottom
+}
+
+body .user-nav .avatar {
+    float: left;
+    margin-right: 5px
+}
+
+body .header-nav-current-user {
+    padding-bottom: 0;
+    font-size: inherit
+}
+
+body .header-nav-current-user .css-truncate-target {
+    max-width: 100%
+}
+
+body .header-actions {
+    float: right;
+    margin-top: -3px;
+    margin-bottom: -3px
+}
+
+body .header-actions .btn {
+    margin-left: 5px
+}
